@@ -245,6 +245,7 @@ begin
         public string Name { get; set; }
     }
     var list4 = new List<Model>();
+    //lambda
     var list5 = list4.Where(c => c.Name.StartsWith("A"));
     var list6 = list5.OrderBy(c => c.Id).ThenByDescending(c => c.Name).ToList();
     var list7 = from c in list4
